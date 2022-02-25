@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet"> 
+    <title>E-Comm</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand navbar-light bg-light">
+        <img src="./images/images/icon-menu.svg" alt="" class="menu_btn" id="menu_btn_id">
+        <img src="./images/images/logo.svg" alt="">
+        <div class="nav navbar-nav">
+            <a class="nav-item nav-link active" href="#">Collections</a>
+            <a class="nav-item nav-link" href="#">Men</a>
+            <a class="nav-item nav-link" href="#">Women</a>
+            <a class="nav-item nav-link" href="#">About</a>
+            <a class="nav-item nav-link" href="#">Contact</a>
+        </div>
+        <div class="cart" id="add_to_cart">
+            <img src="./images/images/icon-cart.svg" alt="" id="id_cart"  />
+            <img id="avatar" src="./images/images/image-avatar.png" alt=""/>
+        </div>
+    </nav>
+    <hr>
+
+
+    <!-- Hover cart  checkout -->
+
+<div class="hovercart" id="hovercart_id">
+    <div class="cart_close">
+       <h1>Cart</h1>
+      <img src="./images/images/icon-close.svg" alt="" id="cart_close_id">
+    </div>
+    <hr>
+    <div class="autumlimted">
+        <img src="./images/images/image-product-1-thumbnail.jpg" alt="image_">
+        <p>Auntumn limited Edition <br> <span>$125*00 </span><span id="price_cart" class="price_cart_class" style="font-weight: bold;">0</span></p>
+        <img src="./images/images/icon-delete.svg" alt="icon-delete" id="delete_id">
+    </div>
+    <button  class="hover_btn" id="hover_btn_id">Checkout</button>
+</div>
+
+
+
+
+    
+    <section class="container">
+        <div class="small-container-one">  
+            <img class="hero" id="heroid" src="./images/images/image-product-1.jpg" >
+            <div class="mini-img">
+                <img id="mini-hero-one" src="./images/images/image-product-1-thumbnail.jpg" alt="">
+                <img id="mini-hero-two" src="./images/images/image-product-2-thumbnail.jpg" alt="">
+                <img id="mini-hero-three" src="./images/images/image-product-3-thumbnail.jpg" alt="">
+                <img id="mini-hero-four" src="./images/images/image-product-4-thumbnail.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="small-container-two">
+            <h4>SNEAKER COMPANY</h4>
+            <h1>Fall Limited Edition <br>Sneakers</h1>
+            <p>These low-profile sneakers are your perfect casual wear <br>companion. Featuring a durable rubber outer sole.they'll <br>Withstand everything the weather can offer.</p>
+            <h1 id="price">$125.00 <span id="span">50%</span></h1>
+            <p id="cut">$250.00</p>
+            <div class="quantity buttons_added" id="add-to-cart-button">
+                <input type="button" value="-" class="minus" id="minus">
+                <input  id="input_id"  title="Qty"  size="4"  />
+                <input type="button" value="+" class="plus" id="plus">
+                <button class="addcart" id="addcart_id"> <img id="small-cart" src="./images/images/icons8-shopping-cart-24.png"> Add To Cart</button>
+            </div>
+        </div>
+    </section>
+
+   <!-- //hover slider -->
+
+    <div class="hovercontainer" id="hovercontainer" >
+        <div class="slide">
+            <img id="closesvg" src="./images/images/icon-close.svg"  >
+           <img id="hoverheroimg" src="./images/images/image-product-1.jpg">
+        </div>
+      <div class="slide">
+          <img id="closesvg2" src="./images/images/icon-close.svg" >
+           <img id="hoverheroimg" src="./images/images/image-product-2.jpg">
+        </div>
+        <div class="slide">
+            <img id="closesvg3" src="./images/images/icon-close.svg" >
+           <img id="hoverheroimg" src="./images/images/image-product-3.jpg">
+        </div>
+        <div class="slide">
+            <img id="closesvg4" src="./images/images/icon-close.svg" >
+           <img id="hoverheroimg" src="./images/images/image-product-4.jpg">
+        </div>
+        <span class="arrow prev" onclick="controller(-1)">&#10094;</span>
+        <span class="arrow next" onclick="controller(1)">&#10095;</span>
+    </div> 
+     
+</body>
+<script src="./app.js"></script>
+</html>
